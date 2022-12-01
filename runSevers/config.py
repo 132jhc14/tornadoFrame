@@ -11,6 +11,7 @@ MYSQL = False
 base_path = os.path.abspath(os.path.dirname(__file__))
 
 INSTALLED_APPS = [
+    'runSevers',
     'apps.users',
 ]
 

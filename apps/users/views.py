@@ -12,7 +12,7 @@ import jwt
 # 用户注册
 class UserHandler(BaseHandler):
 
-    async def post(self):
+    def post(self):
         # 接受请求参数
         user_form = UserForm(self.request.arguments)
         user_code = self.get_body_argument('code')
@@ -37,7 +37,7 @@ class UserHandler(BaseHandler):
 # 用户登录
 class LoginHandler(BaseHandler):
 
-    async def post(self):
+    def post(self):
         await asyncio.sleep(3)
         user_form = LoginUserForm(self.request.arguments)
         if user_form.validate():

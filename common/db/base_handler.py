@@ -16,10 +16,10 @@ class BaseHandler(RequestHandler):
         self.set_header('Access-Control-Allow-Origin', '*')
         # self.set_header('Access-Control-Allow-Origin', 'http://localhost:8080')
         # self.set_header('Access-Control-Allow-Headers', 'X-Requested-With')
-        # self.set_header('Access-Control-Allow-Headers', '*')
-        # self.set_header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS')
-        # self.set_header('Content-Type', 'application/json; charset=UTF-8')
-        # self.set_header('Access-Control-Allow-Headers', 'Content-Type')
+        self.set_header('Access-Control-Allow-Headers', '*')
+        self.set_header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS')
+        self.set_header('Content-Type', 'application/json; charset=UTF-8')
+        self.set_header('Access-Control-Allow-Headers', 'Content-Type')
 
     def prepare(self):
         print("third--准备工作")

@@ -1,6 +1,6 @@
 
 from runSevers.views import IndexHandler
 
-handler = [
+urlpatterns = [
     ('/', IndexHandler),
 ]
